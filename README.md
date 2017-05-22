@@ -1,4 +1,7 @@
-This is a preliminary project implementing the fast microscopic PSF generation tool.
+This is an Eclipse project of the ImageJ plugin for implementing the fast microscopic PSF generation tool.
+
+References:
+
 
 It is intended as a starting point to develop a comprehensive ImageJ plugin for the PSF generation. The core codes have been finished. A nice GUI is needed for better interactions. You are encouraged to be involved in this project.
 
