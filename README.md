@@ -22,5 +22,5 @@ It is intended as a starting point to develop a comprehensive ImageJ plugin for 
 ![GUI of MicroscPSF](screen.png?raw=true "GUI")
 
 **Contact**
-
+-----------
 Jizhou Li (hijizhou@gmail.com)
