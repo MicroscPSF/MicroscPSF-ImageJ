@@ -1,4 +1,4 @@
-This is an Eclipse project of the ImageJ plugin for implementing the fast microscopic PSF (specifically, the Gibson-Lanni model) generation tool. Technical details can be found at [here](http://www.ee.cuhk.edu.hk/~jzli/MicroscPSF/). [The plugin](target/MicroscPSF_IJ-0.1.0-SNAPSHOT-sources.jar) itself can be downloaded from the `target` folder. 
+This is an Eclipse project of the ImageJ plugin for implementing the fast microscopic PSF (specifically, the Gibson-Lanni model) generation tool. Technical details can be found at [here](http://www.ee.cuhk.edu.hk/~jzli/MicroscPSF/). [The plugin](https://github.com/hijizhou/MicroscPSF-ImageJ/raw/master/target/MicroscPSF_IJ-0.1.0-SNAPSHOT-sources.jar) itself can be downloaded from the `target` folder. 
 
 **References**:
 
