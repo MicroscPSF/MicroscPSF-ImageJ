@@ -15,6 +15,9 @@ It is intended as a starting point to develop a comprehensive ImageJ plugin for 
 
 * Icy plugin: https://github.com/hijizhou/MicroscPSF-Icy.
 
+**Screenshot**
+![GUI of MicroscPSF](screenshot.png?raw=true "GUI")
+
 **Contact**
 
 Jizhou Li (hijizhou@gmail.com)
