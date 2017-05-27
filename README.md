@@ -3,7 +3,7 @@ This is an Eclipse project of the ImageJ plugin for implementing the fast micros
 **References**:
 -----------
 
-- [1] J. Li, F. Xue and T. Blu, “Fast and Accurate Three-Dimensional Point Spread Function Computation for Fluorescence Microscopy”, J. Opt. Soc. Am. A, vol. 34, no. 6, 2017. To appear.
+- [1] J. Li, F. Xue and T. Blu, “Fast and Accurate Three-Dimensional Point Spread Function Computation for Fluorescence Microscopy”, J. Opt. Soc. Am. A, vol. 34, no. 6, pp. 1029-1034, 2017.
 - [2] S. F. Gibson and F. Lanni, “Experimental test of an analytical model of aberration in an oil-immersion objective lens used in three-dimensional light microscopy”, J. Opt. Soc. Am. A, vol. 9, no. 1, pp. 154-166, 1992.
 
 **Related**
