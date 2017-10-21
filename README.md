@@ -17,6 +17,8 @@ It is intended as a starting point to develop a comprehensive ImageJ plugin for 
 
 * Icy plugin: https://github.com/hijizhou/MicroscPSF-Icy.
 
+* Python code (by [Dr. Kyle Douglass](http://kmdouglass.github.io/)): http://kmdouglass.github.io/posts/implementing-a-fast-gibson-lanni-psf-solver-in-python.html
+
 **Screenshot**
 -----------
 ![GUI of MicroscPSF](screen.png?raw=true "GUI")
@@ -24,3 +26,13 @@ It is intended as a starting point to develop a comprehensive ImageJ plugin for 
 **Contact**
 -----------
 Jizhou Li (hijizhou@gmail.com)
+
+**Acknowledgement**
+-----------
+[PSFgenerator](http://bigwww.epfl.ch/algorithms/psfgenerator/)
+
+**License**
+-----------
+Copyright (c) 2017, Jizhou Li, Feng Xue and Thierry Blu
+
+The source code is released under the [MIT license](https://opensource.org/licenses/MIT).
