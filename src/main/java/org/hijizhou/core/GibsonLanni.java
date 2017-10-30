@@ -375,26 +375,18 @@ public class GibsonLanni {
 		double[][] Coef = new double[this.nz][this.numBasis * 2];
 		double[][] Ffun = new double[this.numSamp][this.nz * 2];
 
+		double rhoNA2;
+		
 		for (int z = 0; z < this.nz; z++) {
 			ti = (this.ti0 + this.resAxial * (z - (this.nz - 1.0D) / 2.0D));
-
+			
 			for (int rhoi = 0; rhoi < this.numSamp; rhoi++) {
 				rho = rhoi * deltaRho;
-				OPD = this.ns
-						* this.pZ
-						* Math.sqrt(1.0D - this.NA * rho / this.ns
-								* (this.NA * rho / this.ns));
-				OPD = OPD
-						+ this.ng
-						* (this.tg - this.tg0)
-						* Math.sqrt(1.0D - this.NA * rho / this.ng
-								* (this.NA * rho / this.ng));
-
-				OPD = OPD
-						+ this.ni
-						* (ti - this.ti0)
-						* Math.sqrt(1.0D - this.NA * rho / this.ni
-								* (this.NA * rho / this.ni));
+				rhoNA2 = rho * rho * this.NA * this.NA;
+				
+				OPD  = this.pZ * Math.sqrt(this.ns * this.ns - rhoNA2);
+				OPD += this.tg * Math.sqrt(this.ng * this.ng - rhoNA2) - this.tg0 * Math.sqrt(this.ng0 * this.ng0 - rhoNA2);
+				OPD += ti * Math.sqrt(this.ni * this.ni - rhoNA2) - this.ti0 * Math.sqrt(this.ni0 * this.ni0 - rhoNA2);
 
 				W = k0 * OPD;
 
