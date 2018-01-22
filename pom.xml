@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
 		http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
@@ -55,18 +54,26 @@ Ref:
 		<contributor>
 			<name>Johannes Schindelin</name>
 			<url>http://imagej.net/User:Schindelin</url>
-			<roles><role>founder</role></roles>
-			<properties><id>dscho</id></properties>
+			<roles>
+				<role>founder</role>
+			</roles>
+			<properties>
+				<id>dscho</id>
+			</properties>
 		</contributor>
 		<contributor>
 			<name>Olivier Burri</name>
 			<url>http://imagej.net/User:Oburri</url>
-			<properties><id>lacan</id></properties>
+			<properties>
+				<id>lacan</id>
+			</properties>
 		</contributor>
 		<contributor>
 			<name>Mark Hiner</name>
 			<url>http://imagej.net/User:Hinerm</url>
-			<properties><id>hinerm</id></properties>
+			<properties>
+				<id>hinerm</id>
+			</properties>
 		</contributor>
 		<contributor>
 			<name>Jules Maselbas</name>
@@ -74,12 +81,16 @@ Ref:
 		<contributor>
 			<name>Kota Miura</name>
 			<url>http://imagej.net/User:Miura</url>
-			<properties><id>cmci</id></properties>
+			<properties>
+				<id>cmci</id>
+			</properties>
 		</contributor>
 		<contributor>
 			<name>Yili Zhao</name>
 			<url>http://imagej.net/User:Panovr</url>
-			<properties><id>panovr</id></properties>
+			<properties>
+				<id>panovr</id>
+			</properties>
 		</contributor>
 	</contributors>
 
@@ -115,6 +126,11 @@ Ref:
 		<dependency>
 			<groupId>net.imagej</groupId>
 			<artifactId>ij</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-math3</artifactId>
+			<version>3.6.1</version>
 		</dependency>
 	</dependencies>
 </project>
