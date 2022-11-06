@@ -25,7 +25,9 @@ It is intended as a starting point to develop a comprehensive ImageJ plugin for 
 
 **Call by ImageJ Macro Language**
 -----------
-```run("MicroscPSF_macro","nx=256,ny=256,nz=64,na=1.4,lambda=610,ns=1.33,ng=1.5,ni=1.5,tg=170,ti=150,pz=2000,lateral=100,axial=250,basis=100,samp=1000")```
+```
+run("MicroscPSF_macro","nx=256,ny=256,nz=64,na=1.4,lambda=610,ns=1.33,ng=1.5,ni=1.5,tg=170,ti=150,pz=2000,lateral=100,axial=250,basis=100,samp=1000")
+```
 - updated on 6/11/2022, note that the argements need to follow this format at this moment.
 
 **Contact**
