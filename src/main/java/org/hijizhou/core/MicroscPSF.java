@@ -4,6 +4,7 @@ import ij.IJ;
 import ij.ImageJ;
 import ij.ImagePlus;
 import ij.ImageStack;
+import ij.Macro;
 import ij.gui.GUI;
 import org.hijizhou.utilities.GridPanel;
 import org.hijizhou.utilities.WalkBar;
@@ -145,7 +146,54 @@ private JButton bnRun = new JButton("Run");
 	public void run() {
 		// TODO Auto-generated method stub
 		
+		GibsonLanni gl = new GibsonLanni();
 		
+		IJ.showStatus("Processing...");
+		
+		//String[] values = arg.split(",");
+		
+		String[] parameters =  new String[15];;
+		String options = Macro.getOptions();
+		String[] values = options.split(",");
+		
+		IJ.showStatus(" "+options);
+		// extract paramters
+		for(int i=0; i<15; i++) {
+			parameters[i] = values[i].substring(values[i].lastIndexOf("=") + 1);
+			IJ.showStatus(" "+parameters[i]);
+		}
+		
+		gl.setNx(Integer.valueOf(parameters[0].replaceAll("\\s+","")));
+		gl.setNy(Integer.valueOf(parameters[1].replaceAll("\\s+","")));
+		gl.setNz(Integer.valueOf(parameters[2].replaceAll("\\s+","")));
+		
+		gl.setNA(Double.valueOf(parameters[3].replaceAll("\\s+","")));
+		gl.setLambda(Double.valueOf(parameters[4].replaceAll("\\s+",""))*1E-09D);
+		gl.setNs(Double.valueOf(parameters[5].replaceAll("\\s+","")));
+		gl.setNg(Double.valueOf(parameters[6].replaceAll("\\s+","")));
+		gl.setNi(Double.valueOf(parameters[7].replaceAll("\\s+","")));
+		
+		gl.setTg(Double.valueOf(parameters[8].replaceAll("\\s+",""))*1E-06D);
+		gl.setTi0(Double.valueOf(parameters[9].replaceAll("\\s+",""))*1E-06D);
+		gl.setpZ(Double.valueOf(parameters[10].replaceAll("\\s+",""))*1E-09D);
+		gl.setResLateral(Double.valueOf(parameters[11].replaceAll("\\s+",""))*1E-09D);
+		gl.setResAxial(Double.valueOf(parameters[12].replaceAll("\\s+",""))*1E-09D);
+		
+		gl.setNumBasis(Integer.valueOf(parameters[13].replaceAll("\\s+","")));
+		gl.setNumSamp(Integer.valueOf(parameters[14].replaceAll("\\s+","")));
+		
+		long startTime = System.currentTimeMillis();
+		
+		ImageStack stack = gl.compute();
+		
+		long endTime = System.currentTimeMillis();
+
+		ImagePlus ipPSF = new ImagePlus("Computed PSF", stack);
+		
+		ipPSF.show();
+		IJ.run("Fire");
+		
+		IJ.showStatus("Finished");
 	}
 
 	@Override

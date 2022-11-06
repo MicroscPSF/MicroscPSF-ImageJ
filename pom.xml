@@ -13,7 +13,7 @@
 
 	<groupId>org.hijizhou</groupId>
 	<artifactId>MicroscPSF_IJ</artifactId>
-	<version>0.1.0-SNAPSHOT</version>
+	<version>0.1.1-SNAPSHOT</version>
 
 	<name>MicroscPSF</name>
 	<description>A Maven project implementing a PSF generation.
